@@ -4,8 +4,8 @@ def my_decorator(func):
         func()
     return wrapper
 
+@my_decorator
 def greet():
     print('hello world')
 
-greet = my_decorator(greet)
 greet()
